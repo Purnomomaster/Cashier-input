@@ -1,0 +1,17 @@
+x = input("Enter product category:")
+for i in x :
+  if x == "Bakery":
+    y = float(input("Amount:"))
+    print("Discount 30%. Amount due:", 0.07*y)
+    x = input("Enter product category:")
+  elif x == "Dairy":
+    y = float(input("Amount:"))
+    print("Discount 10%. Amount due:", 0.09*y)
+    x = input("Enter product category:")
+  elif x == "off":
+    print("cash register is closed.")
+    break
+  else:
+     y = float(input("Amount:"))
+    print("No discount. Amount due:", y)
+    x = input("Enter product category:")
